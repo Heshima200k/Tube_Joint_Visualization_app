@@ -1,0 +1,95 @@
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background-color: #2d2d2d;
+  border-bottom: 1px solid #444;
+  flex-wrap: wrap;
+}
+
+.toolbar-group {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.toolbar-separator {
+  width: 1px;
+  height: 24px;
+  background-color: #444;
+  margin: 0 4px;
+}
+
+.toolbar-label {
+  font-size: 12px;
+  color: #bbb;
+  margin-right: 4px;
+  font-weight: 500;
+}
+
+.toolbar-button {
+  padding: 6px 12px;
+  background-color: #1a1a1a;
+  border: 1px solid #444;
+  border-radius: 4px;
+  color: #e0e0e0;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.toolbar-button:hover:not(:disabled) {
+  background-color: #252525;
+  border-color: #555;
+}
+
+.toolbar-button:active:not(:disabled) {
+  background-color: #1f1f1f;
+}
+
+.toolbar-button.active {
+  background-color: #4a90e2;
+  border-color: #4a90e2;
+  color: #fff;
+}
+
+.toolbar-button.active:hover {
+  background-color: #357abd;
+  border-color: #357abd;
+}
+
+.toolbar-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.toolbar-button.danger {
+  color: #ff6b6b;
+}
+
+.toolbar-button.danger:hover:not(:disabled) {
+  background-color: #3a1f1f;
+  border-color: #ff6b6b;
+}
+
+.toolbar-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #bbb;
+  user-select: none;
+}
+
+.toolbar-checkbox-label input[type="checkbox"] {
+  cursor: pointer;
+  accent-color: #4a90e2;
+}
+
+.toolbar-checkbox-label:hover {
+  color: #e0e0e0;
+}
+
